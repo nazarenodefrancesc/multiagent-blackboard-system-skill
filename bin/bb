@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import sys
+
+# Allow direct execution from the repository without installation or PYTHONPATH.
+repo_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(repo_root))
+
+from blackboard.cli import main
+
+raise SystemExit(main())

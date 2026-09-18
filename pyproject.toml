@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackboard-collaboration"
+version = "0.1.1"
+description = "Controller-free filesystem Blackboard coordination for heterogeneous AI agents"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+bb = "blackboard.cli:main"
+
+[tool.setuptools]
+packages = ["blackboard"]
